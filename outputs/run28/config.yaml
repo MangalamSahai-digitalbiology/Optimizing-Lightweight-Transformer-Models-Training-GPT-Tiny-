@@ -1,0 +1,15 @@
+output_dir: outputs/run28
+tokenizer_encoding: gpt2
+model_config:
+  n_embd: 128
+  n_head: 8
+  n_positions: 48
+  n_layer: 2
+device: auto
+batch_size: 64
+seq_len: 48
+num_warmup_steps: 10
+num_training_steps: 5000
+grad_accumulation_steps: 1
+min_lr: 0.0001
+max_lr: 0.0005

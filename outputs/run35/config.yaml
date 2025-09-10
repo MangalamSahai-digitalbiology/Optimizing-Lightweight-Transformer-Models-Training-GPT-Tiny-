@@ -1,0 +1,15 @@
+output_dir: outputs/run35
+tokenizer_encoding: gpt2
+model_config:
+  n_embd: 96 #200-300
+  n_head: 16 # sqrt(no.of embedding)
+  n_positions: 32 #256
+  n_layer: 6 # 3-4
+device: auto
+batch_size: 64
+seq_len: 32 # 256
+num_warmup_steps: 10
+num_training_steps: 4800
+grad_accumulation_steps: 3
+min_lr: 0.0001
+max_lr: 0.0005

@@ -1,0 +1,15 @@
+output_dir: outputs/Q3.5_run4
+tokenizer_encoding: gpt2
+model_config:
+  n_embd: 256
+  n_head: 16
+  n_positions: 256
+  n_layer: 4
+device: auto
+batch_size: 128
+seq_len: 256
+num_warmup_steps: 10
+num_training_steps: 5000
+grad_accumulation_steps: 4
+min_lr: 0.0001
+max_lr: 0.0005
